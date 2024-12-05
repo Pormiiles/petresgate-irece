@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetsResgateIrce</title>
+    <link rel="stylesheet" href="formPet.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Dados do animal</h1>
+        <div class="input-group-inline">
+            <div class="input-group">
+                <label for="breed">Raça:</label>
+                <input type="text" id="breed" placeholder="Digite a raça">
+            </div>
+            <div class="input-group">
+                <label for="species">Espécie:</label>
+                <select id="species">
+                    <option value="">Selecione</option>
+                    <option value="cachorro">Cachorro</option>
+                    <option value="gato">Gato</option>
+                </select>
+            </div>
+        </div>
+        <div class="input-group-inline">
+            <div class="input-group">
+                <label for="color">Cor do animal:</label>
+                <input type="text" id="color" placeholder="Digite a cor">
+            </div>
+            <div class="input-group">
+                <label for="size">Porte:</label>
+                <select id="size">
+                    <option value="">Selecione</option>
+                    <option value="pequeno">Pequeno</option>
+                    <option value="médio">Médio</option>
+                    <option value="grande">Grande</option>
+                </select>
+            </div>
+        </div>
+        <div class="image-selection">
+            <img src="https://triunfo.pe.gov.br/pm_tr430/wp-content/uploads/2018/03/sem-foto.jpg" alt="sem foto" class="selected">
+            <img src="https://www.caesonline.com/wp-content/uploads/2021/01/cachorros-abandonados-na-rua.jpg" alt="Animal 1">
+            <img src="https://www.petz.com.br/blog/wp-content/uploads/2020/03/gato-de-rua.jpg" alt="Animal 2">
+            <img src="https://i0.wp.com/www.portaldodog.com.br/cachorros/wp-content/uploads/2020/09/cachorro-de-rua-2.jpg?resize=626%2C500&ssl=1" alt="Animal 3">
+            <img src="https://i.pinimg.com/originals/85/5d/57/855d5710025ec9720ecc89c8505ba63f.jpg" alt="Animal 4">
+        </div>
+        <div class="input-group">
+            <label for="description">Descrição:</label>
+            <textarea id="description" placeholder="Digite uma descrição"></textarea>
+        </div>
+        <div class="button-group">
+            <a href="formPessoa.html"><button class="button button-back">&#8592;</button></a>
+            <a href="formLocalPet.html"><button class="button">&#8594;</button></a>
+        </div>
+        <div class="pagination">
+            <div class="dot"></div>
+            <div class="dot active"></div>
+            <div class="dot"></div>
+        </div>
+    </div>
+</body>
+</html>
