@@ -8,7 +8,26 @@
 </head>
 <body>
     <div class="container">
+        <h1>Dados Pessoais</h1>
+        <div class="input-group">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" placeholder="Digite seu nome">
+        </div>
+
+        <div class="input-group">
+            <label for="phone">Celular:</label>
+            <input type="tel" id="phone" placeholder="Digite seu celular">
+        </div>
+
+        <div class="input-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Digite seu email">
+        </div>
+
+        <br><br><hr><br><br>
+
         <h1>Dados do animal</h1>
+
         <div class="input-group-inline">
             <div class="input-group">
                 <label for="breed">Raça:</label>
@@ -23,41 +42,45 @@
                 </select>
             </div>
         </div>
+
         <div class="input-group-inline">
             <div class="input-group">
                 <label for="color">Cor do animal:</label>
                 <input type="text" id="color" placeholder="Digite a cor">
             </div>
-            <div class="input-group">
-                <label for="size">Porte:</label>
-                <select id="size">
-                    <option value="">Selecione</option>
-                    <option value="pequeno">Pequeno</option>
-                    <option value="médio">Médio</option>
-                    <option value="grande">Grande</option>
-                </select>
-            </div>
         </div>
-        <div class="image-selection">
-            <img src="https://triunfo.pe.gov.br/pm_tr430/wp-content/uploads/2018/03/sem-foto.jpg" alt="sem foto" class="selected">
-            <img src="https://www.caesonline.com/wp-content/uploads/2021/01/cachorros-abandonados-na-rua.jpg" alt="Animal 1">
-            <img src="https://www.petz.com.br/blog/wp-content/uploads/2020/03/gato-de-rua.jpg" alt="Animal 2">
-            <img src="https://i0.wp.com/www.portaldodog.com.br/cachorros/wp-content/uploads/2020/09/cachorro-de-rua-2.jpg?resize=626%2C500&ssl=1" alt="Animal 3">
-            <img src="https://i.pinimg.com/originals/85/5d/57/855d5710025ec9720ecc89c8505ba63f.jpg" alt="Animal 4">
-        </div>
+        
         <div class="input-group">
             <label for="description">Descrição:</label>
             <textarea id="description" placeholder="Digite uma descrição"></textarea>
         </div>
-        <div class="button-group">
-            <a href="formPessoa.html"><button class="button button-back">&#8592;</button></a>
-            <a href="formLocalPet.html"><button class="button">&#8594;</button></a>
+
+        <br><br><hr><br><br>
+
+        <h1>Localização do animal</h1>
+
+        <div class="input-group">
+            <label for="street">Rua:</label>
+            <input type="text" id="street" placeholder="Digite a rua">
         </div>
-        <div class="pagination">
-            <div class="dot"></div>
-            <div class="dot active"></div>
-            <div class="dot"></div>
+
+        <div class="input-group-inline">
+            <div class="input-group">
+                <label for="neighborhood">Bairro:</label>
+                <input type="text" id="neighborhood" placeholder="Digite o bairro">
+            </div>
+        </div>
+
+        <div class="input-group">
+            <label for="reference">Ponto de referência:</label>
+            <input type="text" id="reference" placeholder="Digite um ponto de referência">
+        </div>
+
+        <div class="sent-button">
+            <button>Enviar dados</button>
         </div>
     </div>
+
+    <script src="animal.js"></script>
 </body>
 </html>

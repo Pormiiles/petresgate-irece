@@ -2,7 +2,6 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
     background-color: #f4fafa;
-    background-image: url('https://i.imgur.com/VjUiHzs.png'); /* Background pattern with paw and bones */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -109,6 +108,27 @@ textarea {
 
 .button-back:hover {
     background-color: #bbb;
+}
+
+.sent-button {
+    margin: 50px 0px;
+    
+}
+
+.sent-button button {
+    padding: 15px;
+    background-color: #4caf50;
+    color: white;
+    font-size: large;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.sent-button button:hover {
+    transition: 0.5s;
+    background-color: #45a049;
 }
 
 .pagination {
