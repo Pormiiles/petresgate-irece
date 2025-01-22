@@ -1,0 +1,101 @@
+/* Estilos Gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #D5EBC2;
+    color: #556B45;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.25rem;
+    color: #88B961;
+    margin-bottom: 40px;
+}
+
+.cta-btn {
+    background-color: #A7D676;
+    color: #ffffff;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-btn:hover {
+    background-color: #8BDA63;
+}
+
+/* Seções Intermediárias */
+.intermediary-section {
+    background-color: #88B961;
+    color: #556B45;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.intermediary-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.intermediary-section p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.intermediary-section .cta-btn {
+    background-color: #A7D676;
+    color: #ffffff;
+    border: none;
+    padding: 12px 25px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.intermediary-section .cta-btn:hover {
+    background-color: #8BDA63;
+}
+
+/* Rodapé */
+footer {
+    background-color: #556B45;
+    color: #D5EBC2;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+footer a {
+    color: #A7D676;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+footer a:hover {
+    color: #F6A589;
+}
