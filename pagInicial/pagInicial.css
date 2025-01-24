@@ -43,6 +43,15 @@ body {
     background-color: #8BDA63;
 }
 
+.logo {
+    max-width: 300px; /* Tamanho máximo (ajuste para o desejado) */
+    min-width: 100px; /* Tamanho mínimo para dispositivos pequenos */
+    width: 100%; /* Responsivo */
+    height: auto; /* Mantém a proporção */
+    display: block;
+    margin: 0 auto; /* Centraliza horizontalmente */
+}
+
 /* Menu styles */
 .menu {
     background-color: #f5f5f5;
