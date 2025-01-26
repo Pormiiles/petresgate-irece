@@ -84,6 +84,8 @@ body {
     }
 }
 
+
+
 /* Seções Intermediárias */
 .intermediary-section {
     background-color: #88B961;
@@ -101,6 +103,13 @@ body {
     line-height: 1.6;
     margin: 0 auto;
     max-width: 800px;
+}
+
+.tutorial-image {
+    max-width: 100%;  /* A imagem não ultrapassa a largura do contêiner */
+    height: auto;     /* A altura é ajustada automaticamente para manter a proporção */
+    display: block;   /* Evita espaços indesejados ao redor da imagem */
+    margin: 0 auto;   /* Centraliza a imagem */
 }
 
 /* Rodapé */
