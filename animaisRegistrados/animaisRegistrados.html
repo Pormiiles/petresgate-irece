@@ -10,19 +10,42 @@
     <link rel="stylesheet" href="animaisRegistrados.css">
 </head>
 <body>
-    <header>
-        <h1>PetResgate Irecê</h1>
-        <p>Encontre animais resgatados perto de você!</p>
-
-        <a href="../formulario/formPet.html">Formulário</a>
-    </header>
-
-    <div class="container">
-        <h2>Animais Disponíveis</h2>
-        <div id="pets-grid" class="grid">
-            <!-- Os cards de animais serão inseridos aqui dinamicamente -->
+    <section class="hero">
+        <div class="hero-content">
+            <a href="../pagInicial/pagInicial.html">
+                <img src="../imagens/logo.png" alt="Logo do site" class="logo">
+            </a>
+            <h1>Animais Registrados</h1>
         </div>
-    </div>
+    </section>
+
+     <!-- Menu -->
+     <nav class="menu">
+        <ul>
+            <li><a href="../pagInicial/pagInicial.html">Início</a></li>
+            <li><a href="../formulario/formPet.html">Registrar Animal</a></li>
+            <li><a href="../animaisRegistrados/animaisRegistrados.html">Animais Registrados</a></li>
+            <li><a href="../sobreNos/sobreNos.html">Sobre Nós</a></li>
+            <li><a href="../ajuda/ajuda.html">Ajuda</a></li>
+        </ul>
+    </nav>
+
+     <!-- Seção Intermediária -->
+     <section class="intermediary-section">
+        <div class="content">
+            <h2>Veja os animais já registrados em nossa plataforma</h2>
+            <div id="pets-grid" class="grid">
+                <!-- Os cards de animais serão inseridos aqui dinamicamente -->
+            </div>
+        </div>
+    </section>
+    
+     <!-- Rodapé -->
+     <footer>
+        <div class="footer-content">
+            <p>&copy; <span id="year"></span> PetResgate Irecê. Todos os direitos reservados.</p>
+        </div>
+    </footer>
 
     <script src="animaisRegistrados.js"></script>
 </body>

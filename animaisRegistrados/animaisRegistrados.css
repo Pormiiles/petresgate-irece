@@ -1,21 +1,107 @@
-body {
-  font-family: Arial, sans-serif;
+/* Estilos Gerais */
+* {
   margin: 0;
   padding: 0;
-  background-color: #f9f9f9;
+  box-sizing: border-box;
 }
 
-header {
-  background-color: #ff6f61;
-  color: white;
-  padding: 15px;
+body {
+  font-family: Arial, sans-serif;
+  background-color: #D5EBC2;
+}
+
+/* Hero Section */
+.hero {
+  background-color: #D5EBC2;
+  color: #556B45;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+}
+
+.hero-content {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.hero-content.fade-in {
+  opacity: 1;
+}
+
+.logo {
+  max-width: 300px;
+  min-width: 100px;
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Menu styles */
+.menu {
+  background-color: #f5f5f5;
+  padding: 10px 0;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: inline-flex;
+  gap: 20px;
+}
+
+.menu li {
+  display: inline-block;
+}
+
+.menu a {
+  text-decoration: none;
+  font-size: 16px;
+  color: #556B45;
+  transition: color 0.3s ease;
+  padding: 10px 15px;
+}
+
+.menu a:hover {
+  color: #8BDA63;
+}
+
+/* Ajustes para dispositivos pequenos */
+@media (max-width: 768px) {
+  .menu ul {
+      gap: 15px;
+  }
+
+  .menu a {
+      font-size: 14px;
+  }
+}
+
+/* Seções Intermediárias */
+.intermediary-section {
+  background-color: #88B961;
+  color: #D5EBC2;
+  padding: 60px 100px;
   text-align: center;
 }
 
-.container {
-  max-width: 1200px;
-  margin: 20px auto;
-  padding: 20px;
+.intermediary-section h2 {
+  margin-bottom: 20px;
+}
+
+.intermediary-section p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin: 0 auto;
+  max-width: 800px;
 }
 
 .grid {
@@ -54,4 +140,22 @@ header {
   margin: 5px 0;
   color: #666;
   font-size: 14px;
+}
+
+/* Rodapé */
+footer {
+  background-color: #556B45;
+  color: #D5EBC2;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+footer p {
+  margin-bottom: 10px;
+}
+
+footer a {
+  color: #A7D676;
+  text-decoration: none;
+  font-size: 1rem;
 }

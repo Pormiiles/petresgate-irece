@@ -48,4 +48,11 @@ async function fetchAnimals() {
   // Chamar a função para buscar os animais ao carregar a página
   document.addEventListener('DOMContentLoaded', fetchAnimals);
   
-  
+  /*Animação da parte superior da página*/
+  window.addEventListener('load', () => {
+    const heroContent = document.querySelector('.hero-content');
+    heroContent.classList.add('fade-in');
+});
+
+/*atualização automatica do ano do footer*/
+document.getElementById("year").textContent = new Date().getFullYear();
