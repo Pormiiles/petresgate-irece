@@ -8,10 +8,29 @@ body {
 }
 
 .hero {
+    position: relative; /* Necessário para usar posicionamento absoluto dentro dela */
     background-color: #D5EBC2;
     color: #556B45;
     text-align: center;
     padding: 50px 20px 0px 20px;
+    margin-bottom: 0;
+}
+
+.btn-voltar {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 10px 20px;
+    background-color: #556B45;
+    color: #FFFFFF;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.btn-voltar:hover {
+    background-color: #6B845C;
 }
 
 .logo {
