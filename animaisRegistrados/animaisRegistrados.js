@@ -48,3 +48,4 @@ async function fetchAnimals() {
   // Chamar a função para buscar os animais ao carregar a página
   document.addEventListener('DOMContentLoaded', fetchAnimals);
   
+  

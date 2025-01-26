@@ -97,9 +97,9 @@ const moveSlide = direction => {
 };
 
 // Auto-play functionality
-let autoPlayInterval = setInterval(() => moveSlide('next'), 5000); // Change every 3 seconds
+let autoPlayInterval = setInterval(() => moveSlide('next'), 3000); // Change every 3 seconds
 
 const resetAutoPlay = () => {
   clearInterval(autoPlayInterval);
-  autoPlayInterval = setInterval(() => moveSlide('next'), 5000); // Restart auto-play
+  autoPlayInterval = setInterval(() => moveSlide('next'), 3000); // Restart auto-play
 };
