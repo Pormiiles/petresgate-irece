@@ -37,20 +37,11 @@ body {
     opacity: 1;
 }
 
-.cta-btn {
-    background-color: #A7D676;
-    color: #ffffff;
-    border: none;
-    padding: 15px 30px;
-    font-size: 1.2rem;
+.cta-img {
+    width: 200px;  /* Ajuste conforme necessário */
+    height: auto;
     cursor: pointer;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-}
-
-.cta-btn:hover {
-    background-color: #8BDA63;
-}
+  }
 
 .logo {
     max-width: 300px;
