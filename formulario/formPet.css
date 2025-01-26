@@ -8,7 +8,7 @@ body {
 }
 
 .hero {
-    position: relative; /* Necessário para usar posicionamento absoluto dentro dela */
+    position: relative;
     background-color: #D5EBC2;
     color: #556B45;
     text-align: center;
