@@ -1,9 +1,12 @@
 body {
+    margin: 0;
     font-family: Arial, sans-serif;
-    margin: 20px;
-    line-height: 1.6;
     background-color: #D5EBC2;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
+
 
 .hero {
     position: relative;
@@ -35,6 +38,7 @@ body {
 }
 .back-button {
     margin-top: 20px;
+    margin-bottom: 20px;
     display: inline-block;
     padding: 10px 20px;
     background-color: #556B45;
@@ -44,4 +48,16 @@ body {
 }
 .back-button:hover {
     background-color: #6B845C;
+}
+
+/* Rodapé */
+footer {
+    background-color: #556B45;
+    color: #D5EBC2;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+footer p {
+    margin-bottom: 10px;
 }

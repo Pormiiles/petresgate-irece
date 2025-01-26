@@ -35,3 +35,6 @@ if (animalId) {
 } else {
     alert('ID do animal não especificado.');
 }
+
+/*atualizar ano do rodapé*/
+document.getElementById("year").textContent = new Date().getFullYear();
