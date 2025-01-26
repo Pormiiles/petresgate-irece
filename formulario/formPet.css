@@ -1,15 +1,30 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #f4fafa;
+    background-color: #D5EBC2;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 
+.hero {
+    background-color: #D5EBC2;
+    color: #556B45;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.logo {
+    max-width: 300px; 
+    min-width: 100px;
+    height: auto;
+    display: block;
+    margin: 0 auto; 
+}
+
 .container {
     max-width: 400px;
-    margin: 50px auto;
+    margin: 10px auto;
     padding: 20px;
     background-color: white;
     border-radius: 10px;
