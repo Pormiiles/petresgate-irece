@@ -28,6 +28,15 @@ body {
     margin-bottom: 40px;
 }
 
+.hero-content {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.hero-content.fade-in {
+    opacity: 1;
+}
+
 .cta-btn {
     background-color: #A7D676;
     color: #ffffff;
@@ -70,7 +79,7 @@ body {
     gap: 20px;
 }
 
-.menu li {
+.menu ul li {
     display: inline-block;
 }
 

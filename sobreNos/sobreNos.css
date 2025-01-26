@@ -21,6 +21,15 @@ body {
     font-size: 3rem;
 }
 
+.hero-content {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.hero-content.fade-in {
+    opacity: 1;
+}
+
 .logo {
     max-width: 300px; /* Tamanho máximo (ajuste para o desejado) */
     min-width: 100px; /* Tamanho mínimo para dispositivos pequenos */
