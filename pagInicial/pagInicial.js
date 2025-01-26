@@ -48,28 +48,12 @@ const hideShowArrows = (slides, prevButton, nextButton, targetIndex) => {
 
 // Click next
 nextButton.addEventListener('click', () => {
-  const currentSlide = track.querySelector('.current-slide');
-  const nextSlide = currentSlide.nextElementSibling;
-  const currentDot = dotsNav.querySelector('.current-slide');
-  const nextDot = currentDot.nextElementSibling;
-  const nextIndex = slides.findIndex(slide => slide === nextSlide);
-
-  moveToSlide(track, currentSlide, nextSlide);
-  updateDots(currentDot, nextDot);
-  hideShowArrows(slides, prevButton, nextButton, nextIndex);
+  moveSlide('next');
 });
 
 // Click prev
 prevButton.addEventListener('click', () => {
-  const currentSlide = track.querySelector('.current-slide');
-  const prevSlide = currentSlide.previousElementSibling;
-  const currentDot = dotsNav.querySelector('.current-slide');
-  const prevDot = currentDot.previousElementSibling;
-  const prevIndex = slides.findIndex(slide => slide === prevSlide);
-
-  moveToSlide(track, currentSlide, prevSlide);
-  updateDots(currentDot, prevDot);
-  hideShowArrows(slides, prevButton, nextButton, prevIndex);
+  moveSlide('prev');
 });
 
 // Click nav indicators
@@ -86,4 +70,36 @@ dotsNav.addEventListener('click', e => {
   moveToSlide(track, currentSlide, targetSlide);
   updateDots(currentDot, targetDot);
   hideShowArrows(slides, prevButton, nextButton, targetIndex);
+
+  resetAutoPlay(); // Reset autoplay timer when user interacts
 });
+
+// Function to move slide (common for buttons and autoplay)
+const moveSlide = direction => {
+  const currentSlide = track.querySelector('.current-slide');
+  const currentDot = dotsNav.querySelector('.current-slide');
+  let targetSlide, targetDot;
+
+  if (direction === 'next') {
+    targetSlide = currentSlide.nextElementSibling || slides[0]; // Loop to first slide
+    targetDot = currentDot.nextElementSibling || dots[0];
+  } else {
+    targetSlide = currentSlide.previousElementSibling || slides[slides.length - 1]; // Loop to last slide
+    targetDot = currentDot.previousElementSibling || dots[dots.length - 1];
+  }
+
+  const targetIndex = slides.findIndex(slide => slide === targetSlide);
+  moveToSlide(track, currentSlide, targetSlide);
+  updateDots(currentDot, targetDot);
+  hideShowArrows(slides, prevButton, nextButton, targetIndex);
+
+  resetAutoPlay(); // Reset autoplay timer when user interacts
+};
+
+// Auto-play functionality
+let autoPlayInterval = setInterval(() => moveSlide('next'), 5000); // Change every 3 seconds
+
+const resetAutoPlay = () => {
+  clearInterval(autoPlayInterval);
+  autoPlayInterval = setInterval(() => moveSlide('next'), 5000); // Restart auto-play
+};
