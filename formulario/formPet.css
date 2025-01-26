@@ -11,7 +11,7 @@ body {
     background-color: #D5EBC2;
     color: #556B45;
     text-align: center;
-    padding: 80px 20px;
+    padding: 50px 20px 0px 20px;
 }
 
 .logo {
@@ -132,7 +132,7 @@ textarea {
 
 .sent-button button {
     padding: 15px;
-    background-color: #4caf50;
+    background-color: #A7D676;
     color: white;
     font-size: large;
     font-weight: bold;
@@ -143,7 +143,7 @@ textarea {
 
 .sent-button button:hover {
     transition: 0.5s;
-    background-color: #45a049;
+    background-color: #8BDA63;
 }
 
 .pagination {
@@ -164,4 +164,26 @@ textarea {
 
 .dot.active {
     background-color: #4caf50;
+}
+
+/* Rodapé */
+footer {
+    background-color: #556B45;
+    color: #D5EBC2;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+footer a {
+    color: #A7D676;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+footer a:hover {
+    color: #F6A589;
 }

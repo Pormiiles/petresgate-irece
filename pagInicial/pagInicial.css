@@ -14,7 +14,7 @@ body {
     background-color: #D5EBC2;
     color: #556B45;
     text-align: center;
-    padding: 80px 20px;
+    padding: 50px 20px;
 }
 
 .hero h1 {
@@ -58,19 +58,20 @@ body {
     padding: 10px 0;
     text-align: center;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow-x: auto; /* Permite rolagem horizontal */
+    white-space: nowrap; /* Impede a quebra de linha */
 }
 
 .menu ul {
     list-style: none;
     margin: 0;
     padding: 0;
-    display: flex;
-    justify-content: center;
+    display: inline-flex; /* Mantém os itens em linha */
     gap: 20px;
 }
 
 .menu li {
-    display: inline;
+    display: inline-block;
 }
 
 .menu a {
@@ -78,12 +79,23 @@ body {
     font-size: 16px;
     color: #556B45;
     transition: color 0.3s ease;
+    padding: 10px 15px; /* Dá um pouco mais de área clicável */
 }
 
 .menu a:hover {
     color: #8BDA63;
 }
 
+/* Ajustes para dispositivos pequenos */
+@media (max-width: 768px) {
+    .menu ul {
+        gap: 15px; /* Reduz o espaço entre os itens */
+    }
+
+    .menu a {
+        font-size: 14px; /* Ajusta o tamanho da fonte */
+    }
+}
 
 /* Seções Intermediárias */
 .intermediary-section {
