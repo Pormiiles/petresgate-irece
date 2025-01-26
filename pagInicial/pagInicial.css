@@ -106,6 +106,76 @@ body {
     }
 }
 
+/*carrossel*/
+.carousel {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    overflow: hidden;
+  }
+  
+  .carousel-track-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .carousel-slide {
+    min-width: 100%;
+  }
+  
+  .carousel-slide img {
+    width: 100%;
+    display: block;
+  }
+  
+  .carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    z-index: 10;
+  }
+  
+  .carousel-btn.prev {
+    left: 10px;
+  }
+  
+  .carousel-btn.next {
+    right: 10px;
+  }
+  
+  .carousel-nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .carousel-indicator {
+    width: 10px;
+    height: 10px;
+    background: #ddd;
+    border: none;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+  }
+  
+  .carousel-indicator.current-slide {
+    background: #333;
+  }
+  
+
 /* Seções Intermediárias */
 .intermediary-section {
     background-color: #88B961;
