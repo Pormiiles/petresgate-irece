@@ -25,7 +25,7 @@ function displayAnimalDetails(animal) {
     document.getElementById('pet-title').textContent = `${animal.species} - ${animal.breed}`;
     document.getElementById('pet-color').textContent = `Cor: ${animal.color}`;
     document.getElementById('pet-description').textContent = `Descrição: ${animal.description}`;
-    document.getElementById('pet-owner').textContent = `Registrado por: ${animal.registeredBy.fullname} (${animal.registeredBy.email})`;
+    document.getElementById('pet-owner').textContent = `Registrado por: ${animal.registeredBy.fullName} (${animal.registeredBy.email})`;
 }
 
 // Obtém o ID do animal da URL e carrega os detalhes
