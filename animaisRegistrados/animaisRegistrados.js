@@ -30,9 +30,10 @@ async function fetchAnimals() {
   
     animals.forEach((animal) => {
         const card = document.createElement('div');
+
         card.className = 'pet-card';
         card.innerHTML = `
-            <img src="https://via.placeholder.com/200x150?text=${animal.species}" alt="${animal.species}" />
+            <img src="../imagens/animal${animal.species}.webp" alt="${animal.species}" />
             <h3>${animal.species} - ${animal.breed}</h3>
             <p>Cor: ${animal.color}</p>
             <p>${animal.description.substring(0, 50)}...</p>
