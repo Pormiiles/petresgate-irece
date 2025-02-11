@@ -7,7 +7,7 @@ function getUrlParam(param) {
 // Função para buscar os detalhes do animal no backend
 async function fetchAnimalDetails(id) {
     try {
-        const response = await fetch(`http://localhost:8080/api/animals/${id}`);
+        const response = await fetch(`https://petresgate-backend-3203edadfa82.herokuapp.com/api/animals/${id}`);
         if (!response.ok) {
             throw new Error('Erro ao buscar detalhes do animal');
         }

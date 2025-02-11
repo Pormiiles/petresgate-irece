@@ -1,7 +1,7 @@
 // Função para buscar os animais no backend
 async function fetchAnimals() {
     try {
-        const response = await fetch('http://localhost:8080/api/animals'); // Endereço do endpoint
+        const response = await fetch('https://petresgate-backend-3203edadfa82.herokuapp.com/api/animals'); // Endereço do endpoint
         if (!response.ok) {
             throw new Error('Erro ao buscar animais');
         }

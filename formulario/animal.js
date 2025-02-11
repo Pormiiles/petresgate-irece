@@ -38,7 +38,7 @@ function collectRegisterFormData() {
 function sendRegisterFormData() {
     const registerData = collectRegisterFormData();
 
-    fetch('http://localhost:8080/api/animals', {
+    fetch('https://petresgate-backend-3203edadfa82.herokuapp.com/api/animals', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
