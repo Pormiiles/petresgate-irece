@@ -21,7 +21,7 @@ async function fetchAnimalDetails(id) {
 
 // Função para exibir os detalhes do animal na tela
 function displayAnimalDetails(animal) {
-    document.getElementById('pet-image').src = `https://via.placeholder.com/400x300?text=${animal.species}`;
+    document.getElementById('pet-image').src = `../imagens/animal${animal.species}.webp`;
     document.getElementById('pet-title').textContent = `${animal.species} - ${animal.breed}`;
     document.getElementById('pet-color').textContent = `Cor: ${animal.color}`;
     document.getElementById('pet-description').textContent = `Descrição: ${animal.description}`;
